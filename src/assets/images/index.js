@@ -10,6 +10,7 @@ import communityshop from "./communityshop.webp";
 import communityshopTop from "./communityshopTop.webp";
 import payment from "./payment.webp";
 import converseWhite from "./converseWhite.svg";
+import converseicon from "./converseicon.jpg";
 
 import lowTop from "./lowTop.webp";
 import highTop from "./highTop.webp";
@@ -33,4 +34,5 @@ export {
   communityshopTop,
   payment,
   converseWhite,
+  converseicon,
 };

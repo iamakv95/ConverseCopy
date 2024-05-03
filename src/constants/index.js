@@ -1,9 +1,4 @@
-import {
-  PiUser,
-  PiHeart,
-  PiShoppingBag,
-  PiMagnifyingGlass,
-} from "react-icons/pi";
+import { PiUser, PiHeart, PiShoppingBag } from "react-icons/pi";
 import {
   lowTop,
   highTop,
@@ -33,7 +28,7 @@ export const navLinks = [
   { href: "#women", label: "Women" },
   { href: "#men", label: "Men" },
   { href: "#kids", label: "Kids" },
-  { href: "#sale", label: "Sale", linkHighlight: "true" },
+  { href: "#sale", label: "Sale", linkHighlight: "true", special: true },
   { href: "#contact-us", label: "Connect With The Unexpected" },
 ];
 
@@ -41,17 +36,15 @@ export const userIcons = [
   { iconURL: PiUser, href: "/", key: "account" },
   { iconURL: PiHeart, href: "/", key: "favorite" },
   { iconURL: PiShoppingBag, href: "/", key: "cart" },
-  { iconURL: PiMagnifyingGlass, href: "/", key: "search" },
 ];
-
 
 export const hero = [
   {
     title: "The Next Generation",
-    button: "SHOP NOW",
+    buttonLabel: "SHOP NOW",
     desc: "Designed to pay homage to counter-culture fashion, the Chuck Taylor All Star Cruise pairs a classic canvas upper with retro-inspired details.",
     imgBig: heroBig,
-    imgSmall:heroSmall,
+    imgSmall: heroSmall,
   },
 ];
 
@@ -77,39 +70,39 @@ export const shopStyle = [
 export const offcourticon = [
   {
     title: "Consistent Classic",
-    button: "SHOP NOW",
+    buttonLabel: "SHOP NOW",
     desc: "The Star Player '76 stays true to its iconic elements while brining in fresh design details like a leather Star Chevron and summer-inspired colors that'll amp up any outfit.",
     imgBig: offcourtBig,
-    imgSmall:offcourtSmall,
+    imgSmall: offcourtSmall,
   },
 ];
 
 export const summerlook = [
   {
     title: "Higher Love",
-    button: "SHOP NOW",
+    buttonLabel: "SHOP NOW",
     desc: "It's a fresh altitude from a style with timeless attitude—the Chuck Taylor All Star Lift Platform. An amped-up sole gives these Chucks elevated edge. While fresh colors make 'em an easy add to any close.",
     imgBig: summerlookBig,
-    imgSmall:summerlookSmall,
+    imgSmall: summerlookSmall,
   },
 ];
 
 export const foreverclassic = [
   {
     title: "Summer Aura",
-    button: "SHOP NOW",
+    buttonLabel: "SHOP NOW",
     desc: "A new summer-inspired color palette means you can tout your mood on these classic All Stars. Of course, feelings change— so you should probably get one in every color.",
-    imgBig:summerClassic,
+    imgBig: summerClassic,
   },
 ];
 
 export const ourcommunity = [
   {
     title: "Shop By Style",
-    button: "SHOP NOW",
+    buttonLabel: "SHOP NOW",
     desc: "Use #InMyConverse and tag us on instagram to be featureed.",
     imgBig: community,
-    imgSmall:communityshop,
+    imgSmall: communityshop,
   },
 ];
 
@@ -125,10 +118,10 @@ export const newsletterBig = [
 export const highlights = [
   {
     title: "The Next Generation",
-    button: "SHOP NOW",
+    buttonLabel: "SHOP NOW",
     desc: "Designed to pay homage to counter-culture fashion, the Chuck Taylor All Star Cruise pairs a classic canvas upper with retro-inspired details.",
     imgBig: heroBig,
-    imgSmall:heroSmall,
+    imgSmall: heroSmall,
   },
 ];
 
