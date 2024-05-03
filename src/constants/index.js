@@ -1,11 +1,34 @@
-import { PiUser, PiHeart, PiShoppingBag } from "react-icons/pi";
-import { lowTop, highTop, slipon, platform } from "../assets/images";
+import {
+  PiUser,
+  PiHeart,
+  PiShoppingBag,
+  PiMagnifyingGlass,
+} from "react-icons/pi";
+import {
+  lowTop,
+  highTop,
+  slipon,
+  platform,
+  heroBig,
+  heroSmall,
+  offcourtSmall,
+  offcourtBig,
+  summerlookBig,
+  summerlookSmall,
+  summerClassic,
+  community,
+  communityshop,
+  converseWhite,
+} from "../assets/images";
+
 import {
   FaFacebookF,
   FaInstagram,
   FaTwitter,
   FaYoutube,
+  FaArrowRightLong,
 } from "react-icons/fa6";
+
 export const navLinks = [
   { href: "#women", label: "Women" },
   { href: "#men", label: "Men" },
@@ -15,27 +38,21 @@ export const navLinks = [
 ];
 
 export const userIcons = [
-  { src: PiUser, href: "/", key: "account" },
-  { src: PiHeart, href: "/", key: "favorite" },
-  { src: PiShoppingBag, href: "/", key: "cart" },
+  { iconURL: PiUser, href: "/", key: "account" },
+  { iconURL: PiHeart, href: "/", key: "favorite" },
+  { iconURL: PiShoppingBag, href: "/", key: "cart" },
+  { iconURL: PiMagnifyingGlass, href: "/", key: "search" },
 ];
 
-export const socialMedia = [
-  { src: FaFacebookF, href: "/", key: "facebook" },
-  { src: FaTwitter, href: "/", key: "twitter" },
-  { src: FaInstagram, href: "/", key: "instagram" },
-  { src: FaYoutube, href: "/", key: "youtube" },
-];
 
-export const footerLinks = [
-  { href: "/", label: "FAQs" },
-  { href: "/", label: "Order Status" },
-  { href: "/", label: "Shipping & Delivery" },
-  { href: "/", label: "Returns & Refunds" },
-  { href: "/", label: "Payments" },
-  { href: "/", label: "Contact Us" },
-  { href: "/", label: "Size Guide" },
-  { href: "/", label: "Student Discount" },
+export const hero = [
+  {
+    title: "The Next Generation",
+    button: "SHOP NOW",
+    desc: "Designed to pay homage to counter-culture fashion, the Chuck Taylor All Star Cruise pairs a classic canvas upper with retro-inspired details.",
+    imgBig: heroBig,
+    imgSmall:heroSmall,
+  },
 ];
 
 export const shopStyle = [
@@ -55,6 +72,91 @@ export const shopStyle = [
     src: slipon,
     label: "slip-on",
   },
+];
+
+export const offcourticon = [
+  {
+    title: "Consistent Classic",
+    button: "SHOP NOW",
+    desc: "The Star Player '76 stays true to its iconic elements while brining in fresh design details like a leather Star Chevron and summer-inspired colors that'll amp up any outfit.",
+    imgBig: offcourtBig,
+    imgSmall:offcourtSmall,
+  },
+];
+
+export const summerlook = [
+  {
+    title: "Higher Love",
+    button: "SHOP NOW",
+    desc: "It's a fresh altitude from a style with timeless attitude—the Chuck Taylor All Star Lift Platform. An amped-up sole gives these Chucks elevated edge. While fresh colors make 'em an easy add to any close.",
+    imgBig: summerlookBig,
+    imgSmall:summerlookSmall,
+  },
+];
+
+export const foreverclassic = [
+  {
+    title: "Summer Aura",
+    button: "SHOP NOW",
+    desc: "A new summer-inspired color palette means you can tout your mood on these classic All Stars. Of course, feelings change— so you should probably get one in every color.",
+    imgBig:summerClassic,
+  },
+];
+
+export const ourcommunity = [
+  {
+    title: "Shop By Style",
+    button: "SHOP NOW",
+    desc: "Use #InMyConverse and tag us on instagram to be featureed.",
+    imgBig: community,
+    imgSmall:communityshop,
+  },
+];
+
+export const newsletterBig = [
+  {
+    title: "Never Miss a Beat",
+    button: "Sign up for emails",
+    desc: "Be the first to hear about product launches, collaborations, and more when you sign up for our emails.",
+    imgBig: converseWhite,
+  },
+];
+
+export const highlights = [
+  {
+    title: "The Next Generation",
+    button: "SHOP NOW",
+    desc: "Designed to pay homage to counter-culture fashion, the Chuck Taylor All Star Cruise pairs a classic canvas upper with retro-inspired details.",
+    imgBig: heroBig,
+    imgSmall:heroSmall,
+  },
+];
+
+export const newsletter = [
+  {
+    title: "Never Miss a Beat",
+    placeholder: "Enter your email address",
+    desc: "Be the first to hear about product launches, collaborations, and more when you sign up for our emails.",
+    iconURL: FaArrowRightLong,
+  },
+];
+
+export const socialMedia = [
+  { iconURL: FaFacebookF, href: "/", key: "facebook" },
+  { iconURL: FaTwitter, href: "/", key: "twitter" },
+  { iconURL: FaInstagram, href: "/", key: "instagram" },
+  { iconURL: FaYoutube, href: "/", key: "youtube" },
+];
+
+export const footerLinks = [
+  { href: "/", label: "FAQs" },
+  { href: "/", label: "Order Status" },
+  { href: "/", label: "Shipping & Delivery" },
+  { href: "/", label: "Returns & Refunds" },
+  { href: "/", label: "Payments" },
+  { href: "/", label: "Contact Us" },
+  { href: "/", label: "Size Guide" },
+  { href: "/", label: "Student Discount" },
 ];
 
 // export const products = [
@@ -93,35 +195,4 @@ export const shopStyle = [
 //         rating: 4.5,
 //         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
 //     }
-// ];
-
-// export const footerLinks = [
-//     {
-//         title: "Products",
-//         links: [
-//             { name: "Air Force 1", link: "/" },
-//             { name: "Air Max 1", link: "/" },
-//             { name: "Air Jordan 1", link: "/" },
-//             { name: "Air Force 2", link: "/" },
-//             { name: "Nike Waffle Racer", link: "/" },
-//             { name: "Nike Cortez", link: "/" },
-//         ],
-//     },
-//     {
-//         title: "Help",
-//         links: [
-//             { name: "About us", link: "/" },
-//             { name: "FAQs", link: "/" },
-//             { name: "How it works", link: "/" },
-//             { name: "Privacy policy", link: "/" },
-//             { name: "Payment policy", link: "/" },
-//         ],
-//     },
-//     {
-//         title: "Get in touch",
-//         links: [
-//             { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-//             { name: "+92554862354", link: "tel:+92554862354" },
-//         ],
-//     },
 // ];

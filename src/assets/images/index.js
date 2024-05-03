@@ -8,8 +8,8 @@ import summerClassic from "./summerClassic.webp";
 import community from "./community.webp";
 import communityshop from "./communityshop.webp";
 import communityshopTop from "./communityshopTop.webp";
-import payment from "./payment.webp"
-
+import payment from "./payment.webp";
+import converseWhite from "./converseWhite.svg";
 
 import lowTop from "./lowTop.webp";
 import highTop from "./highTop.webp";
@@ -32,4 +32,5 @@ export {
   platform,
   communityshopTop,
   payment,
+  converseWhite,
 };
