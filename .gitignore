@@ -11,11 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
-/.prettierrc.json
+
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+.prettierrc.json
 .idea
 .DS_Store
 *.suo
