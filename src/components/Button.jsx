@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Button = ({ label, handleClick, buttonCss }) => {
+const Button = ({ label, src, buttonCss }) => {
   return (
-    <button
-      onClick={handleClick}
-      className={`${buttonCss} font-sm flex border-2 px-4 py-2  font-semibold uppercase`}
+    <Link
+      to={src}
+      className={`${buttonCss} font-sm text-cenetr flex border-2 px-4  py-2 font-semibold uppercase`}
     >
       {label}
-    </button>
+    </Link>
   );
 };
 
