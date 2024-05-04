@@ -3,5 +3,13 @@ import MainNavbar from "./MainNavbar";
 import FooterInfo from "./FooterInfo";
 import FooterCopyright from "./FooterCopyright";
 import Button from "./Button";
+import MobileMenu from "./MobileMenu";
 
-export { NovbarTop, MainNavbar, FooterInfo, FooterCopyright, Button };
+export {
+  NovbarTop,
+  MainNavbar,
+  FooterInfo,
+  FooterCopyright,
+  Button,
+  MobileMenu,
+};

@@ -30,6 +30,24 @@ import {
   FaArrowRightLong,
 } from "react-icons/fa6";
 
+export const topNavDets = [
+  {
+    href: "/",
+    title: "FREE SHIPPING | Free shipping for all orders | ",
+    linkText: "See Details",
+  },
+  {
+    href: "/",
+    title: "EASY RETURNS | Simply return it within 7 days | ",
+    linkText: "See Details",
+  },
+  {
+    href: "/",
+    title: "New Arrivals | Shop The Latest Collections | ",
+    linkText: "Shop Now",
+  },
+];
+
 export const navLinks = [
   { href: "#women", label: "Women" },
   { href: "#men", label: "Men" },

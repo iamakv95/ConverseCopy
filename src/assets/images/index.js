@@ -10,6 +10,7 @@ import communityshop from "./communityshop.webp";
 import communityshopTop from "./communityshopTop.webp";
 import payment from "./payment.webp";
 import converseWhite from "./converseWhite.svg";
+import converseBlack from "./converse_black.jpg";
 import converseicon from "./converseicon.jpg";
 
 import lowTop from "./lowTop.webp";
@@ -24,6 +25,7 @@ export {
   offcourtSmall,
   summerlookBig,
   summerlookSmall,
+  converseBlack,
   summerClassic,
   community,
   communityshop,

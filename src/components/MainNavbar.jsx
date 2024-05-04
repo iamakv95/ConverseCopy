@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { navLinks, userIcons } from "../constants";
 import { PiMagnifyingGlass, PiTextIndent, PiTextOutdent } from "react-icons/pi";
 import { converseicon } from "../assets/images";
+import MobileMenu from "./MobileMenu";
 
 const MainNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,6 +20,11 @@ const MainNavbar = () => {
             <PiTextIndent className="h-[35px] w-[30px]" />
           )}
         </button>
+        {menuOpen && (
+          <div className="fixed bottom-0 left-0 top-0 z-20 h-screen w-full bg-white px-4 py-4 transition-all duration-500">
+            <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          </div>
+        )}
         <Link to="/" className="flex items-center justify-start gap-1">
           <span className="text-[17px] font-bold uppercase">Converse</span>
           <img
@@ -28,12 +34,12 @@ const MainNavbar = () => {
           />
         </Link>
       </div>
-      <nav className="flex w-[44%] items-center justify-start gap-4 max-lg:hidden">
+      <nav className="flex w-[44%] items-center justify-start gap-6 max-lg:hidden">
         {navLinks.map((navlink) => (
           <Link
             to={navlink.href}
             key={navlink.label}
-            className={`text-sm font-semibold ${navlink.special && "text-red-600"}`}
+            className={`text-sm font-semibold opacity-90 hover:opacity-100 ${navlink.special && "text-red-600"}`}
           >
             {navlink.label}
           </Link>
