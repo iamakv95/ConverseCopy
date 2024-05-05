@@ -5,7 +5,7 @@ const Button = ({ label, src, buttonCss }) => {
   return (
     <Link
       to={src}
-      className={`${buttonCss} font-sm text-cenetr flex border-2 px-4  py-2 font-semibold uppercase`}
+      className={`${buttonCss} font-sm text-cenetr flex border-2 px-4 py-2 font-semibold uppercase outline-none`}
     >
       {label}
     </Link>

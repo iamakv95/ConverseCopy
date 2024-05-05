@@ -4,6 +4,7 @@ import FooterInfo from "./FooterInfo";
 import FooterCopyright from "./FooterCopyright";
 import Button from "./Button";
 import MobileMenu from "./MobileMenu";
+import SearchBox from "./SearchBox";
 
 export {
   NovbarTop,
@@ -12,4 +13,5 @@ export {
   FooterCopyright,
   Button,
   MobileMenu,
+  SearchBox,
 };

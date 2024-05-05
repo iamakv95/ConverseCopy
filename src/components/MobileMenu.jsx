@@ -12,13 +12,13 @@ import { Button } from "../components";
 
 const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className="flex h-full flex-col items-start justify-between gap-10">
+    <div className="flex h-screen flex-col items-start justify-start gap-20">
       <div className="flex w-full justify-end">
         <button onClick={() => setMenuOpen(!menuOpen)}>
           <PiXBold className="h-[30px] w-[30px]" />
         </button>
       </div>
-      <div className="flex w-full flex-col gap-16">
+      <div className="flex w-full flex-col gap-16 max-md:gap-10">
         <nav className="flex flex-col gap-5">
           {navLinks.map((navlink) => (
             <Link

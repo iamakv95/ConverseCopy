@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <div className="px-8 py-1 max-xl:px-0">
+    <div className=" mt-[82px] px-8 py-1 max-xl:px-0">
       <div className="flex w-full flex-1 justify-center max-md:flex-col">
         <div className="flex w-1/2 flex-1 justify-center self-stretch max-md:w-full">
           <img src={hero.imgBig} alt="hero big" className="w-full" />

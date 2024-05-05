@@ -12,6 +12,10 @@ import payment from "./payment.webp";
 import converseWhite from "./converseWhite.svg";
 import converseBlack from "./converse_black.jpg";
 import converseicon from "./converseicon.jpg";
+import searchLeftBig from "./searchLeftBig.webp";
+import searchLeftSmall from "./searchLeftSmall.webp";
+import searchRightBig from "./searchRightBig.webp";
+import searchRightSmall from "./searchRightSmall.webp";
 
 import lowTop from "./lowTop.webp";
 import highTop from "./highTop.webp";
@@ -24,7 +28,11 @@ export {
   offcourtBig,
   offcourtSmall,
   summerlookBig,
+  searchRightSmall,
   summerlookSmall,
+  searchLeftSmall,
+  searchRightBig,
+  searchLeftBig,
   converseBlack,
   summerClassic,
   community,
